@@ -16,6 +16,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Netlify deployment
+
+Netlify should use the repository root with `netlify.toml`; the configured base directory is `frontend` and the build command is `npm run build`. Set `NEXT_PUBLIC_API_URL` in the Netlify site environment to the publicly accessible URL of the existing FastAPI backend. The local fallback URL is intended only for development.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
